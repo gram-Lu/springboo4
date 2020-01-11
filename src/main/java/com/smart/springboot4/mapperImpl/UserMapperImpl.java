@@ -14,4 +14,8 @@ public class UserMapperImpl implements UserMapper {
         System.out.println("进入Service层" );
         userMapper.insert(user);
     }
+     public User findToken(String token){
+         System.out.println("进入service层的insert");
+        return userMapper.findToken(token);
+     }
 }
